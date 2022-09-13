@@ -1,0 +1,14 @@
+{% extends 'main/base.html' %}
+{% block title %}
+   Main
+{% endblock %}
+{% block content %}
+    {% if tasks %}
+        {% for task in tasks %}
+            <h2>{{ task.title }}</h2>
+            <h3>{{ task.task }}</h3>
+        {% endfor %}
+    {% else %}
+    {% endif %}
+    {% endblock %}
+
